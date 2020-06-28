@@ -1164,6 +1164,10 @@ a {
     font-size: 14px; } }
 
 /* Блоки */
+.portfolio__wrapper {
+  max-width: 1440px;
+  margin: 0 auto; }
+
 .portfolio__list {
   padding: 0;
   margin: 0;
