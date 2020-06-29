@@ -1,0 +1,28 @@
+.lis-about {
+  padding-top: 85px;
+  padding-bottom: 250px;
+  background-color: $back;
+
+  &--bottom {
+    padding-top: 240px;
+
+    & img {
+      margin-bottom: 384px;
+    }
+  }
+}
+
+.lis-about__section {
+  padding-left: 137px;
+  padding-right: 137px;
+}
+
+.lis-about__title {
+  margin: 0;
+  margin-bottom: 85px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: $text;
+}

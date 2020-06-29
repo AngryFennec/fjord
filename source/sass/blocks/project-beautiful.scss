@@ -1,0 +1,12 @@
+.project-beautiful {
+  display: flex;
+  min-height: 100vh;
+  background-color: $light-grey;
+}
+
+.project-beautiful__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}

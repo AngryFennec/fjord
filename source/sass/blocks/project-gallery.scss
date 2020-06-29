@@ -1,0 +1,49 @@
+.project-gallery {
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+
+.project-gallery__section {
+  padding-left: 157px;
+  padding-right: 133px;
+}
+
+.project-gallery__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+
+  &--main {
+    margin-bottom: 162px;
+  }
+
+  &--bottom {
+    margin-top: 252px;
+  }
+}
+
+.project-gallery__description {
+  max-width: 232px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: $white;
+
+  &--left {
+    margin-left: 80px;
+  }
+
+  &--right {
+    margin-right: 197px;
+  }
+}
+
+.project-gallery__img {
+  &--right {
+    margin-right: 123px;
+  }
+}
