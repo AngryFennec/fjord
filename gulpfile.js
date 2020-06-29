@@ -6,7 +6,7 @@ const autoprefixer = require('autoprefixer');
 const minify = require('gulp-csso');
 const rename = require('gulp-rename');
 const server = require('browser-sync').create();
-const imagemin = require('gulp-imagemin');
+//const imagemin = require('gulp-imagemin');
 const svgstore = require('gulp-svgstore');
 const posthtml = require('gulp-posthtml');
 const include = require('posthtml-include');
@@ -56,11 +56,11 @@ gulp.task('json', () => gulp.src('source/json/*.json')
 );
 
 gulp.task('images', () => gulp.src('source/img/**/*.{gif,png,jpg,svg}')
-  .pipe(imagemin([
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.jpegtran({progressive: true}),
-    imagemin.svgo()
-  ]))
+  // .pipe(imagemin([
+  //   imagemin.optipng({optimizationLevel: 3}),
+  //   imagemin.jpegtran({progressive: true}),
+  //   imagemin.svgo()
+  // ]))
   .pipe(gulp.dest('build/img/'))
 );
 
