@@ -3,6 +3,28 @@
 <include src="source/components/head.html"></include>
 
 <body>
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <div class="main-header__top">
+      <p class="main-header__sing">SING</p>
+      <a class="main-header__play-again"></a>
+    </div>
+      <div class="main-header__button button">
+        <a class="main-header__btn-open btn-open" href="#"></a>
+      </div>
+      <div class="main-header__overlay overlay">
+        <div class="main-header__wrap wrap">
+          <p class="main-header__sing">SING</p>
+          <ul class="main-header__wrap-nav wrap-nav">
+            <li><a class="main-header__menu-link" href="#">Работы</a></li>
+            <li><a class="main-header__menu-link" href="#">Контакты</a></li>
+          </ul>
+
+        </div>
+      </div>
+      <a class="main-header__portfolio">наши работы</a>
+    </div>
+  </header>
   <main class="container">
     <section class="portfolio">
       <div class="portfolio__wrapper wrapper">
@@ -27,7 +49,7 @@
             <a>
               <div class="portfolio__content">
                 <img class="portfolio__img" src="img/lis-small.png" width=500 height=585>
-                <p class="portfolio__title">lis</p>
+                <p class="portfolio__title">Сайт-портфолио цифрового художника сюрреалиста Артема LIS</p>
               </div>
             </a>
           </li>
@@ -43,8 +65,9 @@
       </div>
     </section>
   </main>
+  <!--
   <footer class="footer">
-    <div class="footer__wrapper" id="parallax">
+    <div class="footer__wrapper">
       <ul class="footer__list">
         <li class="footer__item">
           <a class="footer__link">
@@ -60,6 +83,7 @@
     </div>
 
   </footer>
+-->
   <include src="source/components/scripts.html"></include>
 </body>
 

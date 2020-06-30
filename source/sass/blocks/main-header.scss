@@ -1,0 +1,143 @@
+.main-header__wrapper {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: none;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: url("../img/header-title.svg") no-repeat 15% 50%;
+  padding-top: 32px;
+  padding-left: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-header__play-again {
+  width: 131px;
+  height: 41px;
+  background: url("../img/play-again.svg") no-repeat;
+  display: block;
+  margin-left: 41.5%;
+  margin-top: -17px;
+}
+
+.main-header__portfolio {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.3em;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 185px;
+  padding-bottom: 215px;
+}
+
+.main-header__sing {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15.8491px;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.main-header__button {
+  display: inline;
+  position: absolute;
+  right: 55px;
+  top: 47px;
+  z-index: 999;
+}
+
+.main-header__button a {
+  text-decoration: none;
+}
+
+.main-header__btn-open:after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 29px;
+  background: url("../img/menu-open.svg") no-repeat;
+}
+
+.main-header__btn-open:hover:after {
+  color: #34B484;
+}
+
+.main-header__btn-close:after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 17px;
+  background: url("../img/menu-close.svg") no-repeat;
+  left: -7px;
+}
+
+.main-header__btn-close:hover:after {
+  color: #34B484;
+}
+/*overlay*/
+.main-header__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  z-index: 99;
+  margin: 0 auto;
+  left: 0;
+  background: #141414;
+}
+
+.main-header__wrap {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-top: 32px;
+  padding-left: 33px;
+}
+
+.main-header__wrap-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+
+  & li {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.main-header__menu-link {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 202.128px;
+  line-height: 250px; /* identical to box height */
+  text-decoration: none;
+  text-align: center;
+  animation: pulse 1s;
+  color: #0D0D0D;
+  transition: 0.3s;
+
+  &:hover {
+    animation: scale 1s linear alternate;
+  }
+}
+@keyframes scale {
+  to {
+    transform: scale(2);
+  }
+}
