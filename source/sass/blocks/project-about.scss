@@ -1,0 +1,52 @@
+.project-about {
+  padding-top: 198px;
+  padding-bottom: 180px;
+}
+
+.project-about__link {
+  display: block;
+  margin-bottom: 166px;
+  margin-left: 40.5%;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: $text;
+}
+
+.project-about__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: $dark-grey;
+}
+
+.project-about__wrapper {
+  display: flex;
+}
+
+.project-about__text {
+  min-width: 302px;
+  margin: 0;
+  margin-right: 11%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: $white
+}
+
+.project-about--white {
+  padding-top: 94px;
+  background-color: $white;
+
+  & .project-about__title {
+    color: $back;
+    opacity: 0.4;
+  }
+
+  & .project-about__text {
+    color: $back;
+  }
+}
