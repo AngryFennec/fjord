@@ -37,3 +37,13 @@ $(".main-header__menu-link").bind("animationend webkitAnimationEnd oAnimationEnd
     $(this).removeClass('animate__animated animate__pulse');
 });
 */
+
+$('.js-scroll-trigger').click(function() {
+  var scrollName = $(this).attr('data-scroll'),
+      scrollElem = $(scrollName),
+      scrollTop = scrollElem.offset().top;
+
+  $('html, body').animate({
+    scrollTop: scrollTop
+  }, 1000);
+});
