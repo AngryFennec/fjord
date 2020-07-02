@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа с классами</title>
+</head>
+<body>
+    <script>
+        class A {
+            constructor (x1, x2) {
+                this.x1 = x1;
+                this.x2 = x2;
+            }
+
+            getX1 () {
+                return x1;
+            }
+
+            getX2 () {
+                return x2;
+            }
+
+            setX1 (x1) {
+                this.x1 = x1;
+            }
+
+            setX2 (x2) {
+                this.x2 = x2;
+            }
+        }
+
+        class B1 extends A {
+            setX1 (x1) {
+                if (x1 > 0)
+                    this.x1 = x1;
+            }
+        }
+        class B2 extends A {}
+        class B3 extends A {}
+        class C1 extends B1 {}
+    </script>
+</body>
+</html>

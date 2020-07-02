@@ -1281,10 +1281,15 @@ a {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration: underline;
   text-transform: uppercase;
-  color: #E9E9E9; }
+  color: #E9E9E9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .project-about__link:hover {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    opacity: 0.7; }
 
 .project-about__title {
   margin: 0;
@@ -1512,10 +1517,19 @@ a {
   font-weight: normal;
   font-size: 15.8491px;
   line-height: 19px;
+  width: 40px;
   /* identical to box height */
   letter-spacing: 0.03em;
   margin: 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .main-header__sing:hover {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    opacity: 0.7; }
 
 .main-header__button {
   display: inline;
@@ -1525,7 +1539,13 @@ a {
   z-index: 999; }
 
 .main-header__button a {
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .main-header__button a:hover {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    opacity: 0.7; }
 
 .main-header__btn-open:after {
   position: absolute;
@@ -1545,8 +1565,13 @@ a {
   background: url("../img/menu-close.svg") no-repeat;
   left: -7px; }
 
-.main-header__btn-close:hover:after {
-  color: #34B484; }
+.main-header__btn-close {
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .main-header__btn-close:hover {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    opacity: 0.7; }
 
 /*overlay*/
 .main-header__overlay {
