@@ -1,6 +1,7 @@
 .project-about {
   padding-top: 198px;
   padding-bottom: 180px;
+    background: $back;
 }
 
 .project-about__link {
@@ -49,4 +50,25 @@
   & .project-about__text {
     color: $back;
   }
+}
+
+.project-about__description {
+  max-width: 325px;
+  margin-right: 110px;
+}
+
+.project-about__what {
+  max-width: 200px;
+}
+
+.project-about--ucandles {
+  background: #DCC7B2;
+  color: #141414;
+& .project-about__link  {
+  color: #141414;
+}
+}
+
+.project-about--app {
+  background: #222431;
 }

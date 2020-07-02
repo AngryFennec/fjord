@@ -1,0 +1,29 @@
+.control {
+  background: #FFFFFF;
+
+  & a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15.8491px;
+    line-height: 19px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #121212;
+    transition: 0.2s;
+
+    &:hover {
+      transition: 0.2s;
+      opacity: 0.7;
+    }
+  }
+}
+
+.control__wrapper {
+  padding-top: 152px;
+  padding-bottom: 171px;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}

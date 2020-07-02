@@ -1,12 +1,11 @@
 .ucandles-about {
-  background-color: $white;
+  background-color: #EEE3D8;
 }
 
-.ucandles-about__section {
-  min-height: 100vh;
-}
+.ucandles-about__wrapper {
+  padding-top: 172px;
+  padding-bottom: 318px;
+    margin: 0 auto;
+    width: 908px;
 
-.ucandles-about__decoration {
-  min-height: 100vh;
-  background-color: $light-grey;
 }

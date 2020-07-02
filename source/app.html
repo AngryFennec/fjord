@@ -1,17 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Snow Fjord</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-</head>
-
+<include src="source/components/head.html"></include>
 
 <body>
-  <header class="main-header main-header--ucandles">
+  <header class="main-header main-header--app">
     <div class="main-header__wrapper">
       <div class="main-header__top">
         <p class="main-header__sing">SING</p>
@@ -32,52 +24,41 @@
     </div>
   </header>
   <main class="container">
-    <section class="project-about project-about--ucandles">
+    <section class="project-about project-about--app">
       <div class="section">
-        <a href="#" class="project-about__link">СМОТРЕТЬ САЙТ</a>
+        <a class="project-about__link">СКОРО БУДЕТ В APPSTORE</a>
         <h2 class="project-about__title">Проект</h2>
         <div class="project-about__wrapper">
-          <p class="project-about__text project-about__description">Интернет-магазин для продажи ароматической продукции Ucandles</p>
+          <p class="project-about__text">Cервис аналитики для торгорвли на маркетплейсах Jstick</p>
           <p class="project-about__text">В этом проекте мы разработали архитектуру продукта и создали визуальное решение интерфейсов во всех разрешениях. Также мы разработали иллюстрации, анимации и сайт сервиса. Проект реализован и уже поднимает продажи тысячи клиентов на маркетплейсах.</p>
         </div>
         <h2 class="project-about__title">Разработка</h2>
         <div class="project-about__wrapper">
-          <p class="project-about__text  project-about__what">UX/ UI разработка, реализация на платформе InSale</p>
+          <p class="project-about__text">Коцепт, UX/ UI, иллюстрации</p>
         </div>
       </div>
     </section>
 
-    <section class="project-beautiful">
-      <img src="img/ucandles.png" width="1440" height="700" alt="Ucandles">
+    <!--<section class="project-beautiful">
+      <div class="section"></div>
     </section>
-
-    <section class="ucandles-about">
-      <div class="ucandles-about__wrapper">
-        <img src="img/ucandles-main.png" width="908" height="2087" alt="Главная страница Ucandles">
+-->
+    <section class="app-about">
+      <div class="section">
+        <img src="img/app.png" alt="экраны">
       </div>
     </section>
+
 
     <section class="control">
       <div class="control__wrapper">
-        <a href="jstick.html">Предыдущая</a>
-        <a href="lis.html">Следующая работа</a>
+        <a href="lis.html">Предыдущая</a>
+        <a href="jstick.html">Следующая работа</a>
       </div>
     </section>
-    
-<section class="project-footer">
-  <div class="project-footer__wrapper">
-    <p>@2020</p>
-    <a href="index.html">Snow Ford Studio</a>
-    <p>SING</p>
-  </div>
-</section>
-
+    <include src="source/components/project-footer.html"></include>
   </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.0.0/rellax.min.js"></script>
-<script src="js/vendor.js"></script>
-<script src="js/main.js"></script>
-
+  <include src="source/components/scripts.html"></include>
 </body>
 
 </html>

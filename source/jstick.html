@@ -3,14 +3,34 @@
 <include src="source/components/head.html"></include>
 
 <body>
+  <header class="main-header main-header--jstick">
+    <div class="main-header__wrapper">
+      <div class="main-header__top">
+        <p class="main-header__sing">SING</p>
+      </div>
+      <div class="main-header__button button">
+        <a class="main-header__btn-open btn-open" href="#"></a>
+      </div>
+      <div class="main-header__overlay overlay">
+        <div class="main-header__wrap wrap">
+          <p class="main-header__sing">SING</p>
+          <ul class="main-header__wrap-nav wrap-nav">
+            <li><a class="main-header__menu-link" href="#portfolio">Работы</a></li>
+            <li><a class="main-header__menu-link" href="#">Контакты</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </header>
   <main class="container">
     <section class="project-about">
       <div class="section">
-        <a href="#" class="project-about__link">СМОТРЕТЬ САЙТ</a>
+        <a href="http://jstick.ru" class="project-about__link">СМОТРЕТЬ САЙТ</a>
         <h2 class="project-about__title">Проект</h2>
         <div class="project-about__wrapper">
           <p class="project-about__text">Cервис аналитики для торгорвли на маркетплейсах Jstick</p>
-          <p class="project-about__text">В этом проекте мы разработали архитектуру продукта и создали визуальное решение интерфейсов во всех разрешениях. Также мы разработали иллюстрации, анимации и сайт сервиса.  Проект реализован и уже поднимает продажи тысячи клиентов на маркетплейсах.</p>
+          <p class="project-about__text">В этом проекте мы разработали архитектуру продукта и создали визуальное решение интерфейсов во всех разрешениях. Также мы разработали иллюстрации, анимации и сайт сервиса. Проект реализован и уже поднимает продажи тысячи клиентов на маркетплейсах.</p>
         </div>
         <h2 class="project-about__title">Разработка</h2>
         <div class="project-about__wrapper">
@@ -19,10 +39,10 @@
       </div>
     </section>
 
-    <section class="project-beautiful">
+    <!--<section class="project-beautiful">
       <div class="section"></div>
     </section>
-
+-->
     <section class="jstick-about">
       <div class="section">
         <img src="img/jstick-main.png" alt="Главная страница JStick">
@@ -30,7 +50,7 @@
       <div class="jstick-about__decoration"></div>
     </section>
 
-    <section class="project-about project-about--white">
+    <!--  <section class="project-about project-about--white">
       <div class="section">
         <h2 class="project-about__title">Этапы разработки</h2>
         <div class="project-about__wrapper">
@@ -46,6 +66,14 @@
         Вероятно, здесь будут картинки
       </div>
     </section>
+  -->
+    <section class="control">
+      <div class="control__wrapper">
+        <a href="#">Предыдущая</a>
+        <a href="ucandles.html">Следующая работа</a>
+      </div>
+    </section>
+    <include src="source/components/project-footer.html"></include>
   </main>
   <include src="source/components/scripts.html"></include>
 </body>

@@ -1,3 +1,17 @@
+@keyframes scale {
+  0% {
+             transform: scale(1.0);
+             -webkit-transform: scale(1.0);
+         }
+         100% {
+             transform: scale(2.0);
+             -webkit-transform: scale(2.0);
+         }
+}
+
+.main-header {
+    background: $back;
+}
 .main-header__wrapper {
   width: 100%;
   position: relative;
@@ -130,14 +144,84 @@
   text-align: center;
   animation: pulse 1s;
   color: #0D0D0D;
-  transition: 0.3s;
+  transition: 0.5s;
 
   &:hover {
-    animation: scale 1s linear alternate;
+  //  animation: scale 1s linear alternate;
+  //   -webkit-animation: scale 1s linear alternate;
+    text-decoration: underline;
+    transition: 0.5s;
   }
 }
-@keyframes scale {
-  to {
-    transform: scale(2);
+
+
+.main-header--jstick {
+  background: #017BFF;
+  color: #141414;
+  & .main-header__wrapper {
+      background: url("../img/header-title-jstick.svg") no-repeat 15% 50%;
   }
+  & .main-header__btn-open:after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 29px;
+    background: url("../img/menu-open-dark.svg") no-repeat;
+  }
+
+  & .main-header__overlay .main-header__sing {
+    color: #E9E9E9;
+  }
+
+}
+
+.main-header--ucandles {
+  background: #FAFAFA;
+  color: #141414;
+  & .main-header__wrapper {
+      background: url("../img/header-title-ucandles.svg") no-repeat 15% 50%;
+  }
+  & .main-header__btn-open:after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 29px;
+    background: url("../img/menu-open-dark.svg") no-repeat;
+  }
+
+  & .main-header__overlay .main-header__sing {
+    color: #E9E9E9;
+  }
+
+}
+
+.main-header--lis {
+
+  & .main-header__wrapper {
+      background: url("../img/header-title-lis.svg") no-repeat 15% 50%;
+  }
+
+
+}
+
+.main-header--app {
+  background: #222431;
+  color: #E9E9E9;
+  & .main-header__wrapper {
+      background: url("../img/header-title-app.svg") no-repeat 15% 50%;
+  }
+
+
+  & .main-header__overlay .main-header__sing {
+    color: #E9E9E9;
+  }
+
+}
+
+.main-header--contacts {
+    & .main-header__wrapper {
+      background: url("../img/header-title-contacts.svg") no-repeat 15% 50%;
+  }
+
+
 }

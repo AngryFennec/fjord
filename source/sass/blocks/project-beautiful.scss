@@ -1,7 +1,11 @@
 .project-beautiful {
   display: flex;
-  min-height: 100vh;
-  background-color: $light-grey;
+  //min-height: 100vh;
+  background-color: #EEE3D8;
+  & img {
+    margin: 0 auto;
+  }
+
 }
 
 .project-beautiful__wrapper {

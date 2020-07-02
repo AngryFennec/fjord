@@ -22,12 +22,13 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 138%;
-  background: $back;
+
   color: $text;
 }
 
 a {
   color: inherit;
+  cursor: pointer;
 }
 
 .visually-hidden {
