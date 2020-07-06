@@ -47,3 +47,65 @@ $('.js-scroll-trigger').click(function() {
     scrollTop: scrollTop
   }, 1000);
 });
+
+// document.addEventListener('wheel',function (event){
+//   console.log(event.deltaY);
+//   //only vertical scroll
+//   if (event.deltaY > 0)
+//   {
+//     event.preventDefault();
+//     smoothScrollDown(document.documentElement,200,500)
+//   }
+//   if (event.deltaY < 0)
+//   {
+//     event.preventDefault();
+//   //  smoothScrollUp(document.documentElement,100,2000)
+//   }
+// })
+// function smoothScrollDown (domElement,pixel,delay)
+// {
+//   const intervalToRepeat = 25;
+//   const step = (intervalToRepeat * pixel) / delay;
+//     console.log(step);
+//   if ( step < pixel)
+//   {
+//     console.log(domElement.scrollTop);
+//     domElement.scrollTop += step;
+//     setTimeout(function (){
+//       smoothScrollDown(domElement,pixel - step,delay)
+//     },intervalToRepeat);
+//   }
+//
+//
+// }
+//
+// function smoothScrollUp (domElement,pixel,delay)
+// {
+//
+//   const intervalToRepeat = 25;
+//   const step = (intervalToRepeat * pixel) / delay;
+//   console.log(step);
+//   if ( step < pixel)
+//   {
+//     console.log(domElement.scrollTop);
+//     domElement.scrollTop += step;
+//     setTimeout(function (){
+//       smoothScrollUp(domElement,pixel - step,delay)
+//     },intervalToRepeat);
+//   }
+//
+//
+// }
+
+const config = {
+  view: document.querySelector('.app'),
+  preload: true,
+  native: false,
+  change(state) {
+    document.documentElement.style.backgroundColor = `hsl(${(state.current / state.bounding) * 360}, 100%, 95%)`;
+  },
+
+};
+
+const r = window.rolly(config);
+r.init();

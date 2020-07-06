@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <link href="https://unpkg.com/rolly.js@0.2.0/css/style.css" rel="stylesheet">
 </head>
 
 
-<body>
-  <header class="main-header">
+<body class="app">
+  <header class="main-header" data-scene="">
     <div class="main-header__wrapper">
       <div class="main-header__top">
       <p class="main-header__sing">SING</p>
@@ -33,7 +34,7 @@
       <a class="main-header__portfolio js-scroll-trigger" data-scroll="#portfolio">наши работы</a>
     </div>
   </header>
-  <main class="container">
+  <main class="container" data-scene="">
     <section class="portfolio" id="portfolio">
       <div class="portfolio__wrapper wrapper">
         <ul class="portfolio__list">
@@ -84,6 +85,7 @@
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.0.0/rellax.min.js"></script>
+<script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
 
