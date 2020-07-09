@@ -1469,7 +1469,21 @@ a {
     -webkit-transform: scale(2); } }
 
 .main-header {
-  background: #141414; }
+  background: #141414;
+  position: relative; }
+
+.main-header__para {
+  width: 100%;
+  background: url("../img/jstick-header.png") no-repeat;
+  background-position: 50% 50%;
+  position: absolute;
+  z-index: 20;
+  height: 100vh;
+  left: 0;
+  top: 0; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .main-header__para {
+      background: url("../img/jstick-header-2x.png") no-repeat; } }
 
 .main-header__wrapper {
   width: 100%;
