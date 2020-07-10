@@ -111,6 +111,7 @@ const r = window.rolly(config);
 r.init();
 }
 
+/*
 document.addEventListener("mousemove", parallax);
   const elem = document.querySelector(".main-header__para");
 
@@ -122,3 +123,20 @@ document.addEventListener("mousemove", parallax);
       let x = `${_depth}`;
       elem.style.backgroundPosition = x;
   }
+*/
+
+(function() {
+
+  const mainCursor = document.querySelector('.main__cursor');
+
+document.addEventListener('mousemove', e => {
+    mainCursor.setAttribute("style", "top: " + (e.pageY) + "px; left: " + (e.pageX) + "px;")
+});
+
+document.addEventListener('click', e => {
+    mainCursor.classList.add("expand");
+    setTimeout(() => {
+        mainCursor.classList.remove("expand");
+    }, 500);
+});
+})()

@@ -193,6 +193,12 @@
 .main-header--jstick {
   background: #017BFF;
   color: #141414;
+  & .main-header__para {
+    background: url("../img/jstick-header.png") no-repeat;
+    @include retina {
+      background: url("../img/jstick-header-2x.png") no-repeat;
+    }
+  }
   & .main-header__wrapper {
       background: url("../img/header-title-jstick.svg") no-repeat 15% 50%;
   }
@@ -213,6 +219,12 @@
 .main-header--ucandles {
   background: #FAFAFA;
   color: #141414;
+  & .main-header__para {
+    background: url("../img/ucandles-header.png") no-repeat;
+    @include retina {
+      background: url("../img/ucandles-header-2x.png") no-repeat;
+    }
+  }
   & .main-header__wrapper {
       background: url("../img/header-title-ucandles.svg") no-repeat 15% 50%;
   }
@@ -231,7 +243,12 @@
 }
 
 .main-header--lis {
-
+  & .main-header__para {
+    background: url("../img/lis-header.png") no-repeat;
+    @include retina {
+      background: url("../img/lis-header-2x.png") no-repeat;
+    }
+  }
   & .main-header__wrapper {
       background: url("../img/header-title-lis.svg") no-repeat 15% 50%;
   }
@@ -242,6 +259,12 @@
 .main-header--app {
   background: #222431;
   color: #E9E9E9;
+  & .main-header__para {
+    background: url("../img/app-header.png") no-repeat;
+    @include retina {
+      background: url("../img/app-header-2x.png") no-repeat;
+    }
+  }
   & .main-header__wrapper {
       background: url("../img/header-title-app.svg") no-repeat 15% 50%;
   }

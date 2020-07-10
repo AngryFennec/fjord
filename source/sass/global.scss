@@ -22,7 +22,7 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 138%;
-
+cursor: none;
   color: $text;
 }
 
@@ -47,6 +47,30 @@ a {
 .rub {
   font-family: 'ASLRubl';
 }
+
+.app--main {
+  background: #141414;
+}
+
+.main__cursor {
+  display: block;
+   width: 30px;
+   height: 30px;
+   position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%);
+   border-radius: 50%;
+   background: transparent;
+   pointer-events: none;
+   z-index: 111;
+   border: 2px solid #FFFFFF;
+   transition: all 0.2s ease-out;
+   animation: moveCursor1 .2s infinite alternate;
+  //cursor:url("../img/cursor.svg"), auto;
+
+}
+
 
 @media(max-width: 767px) {
   body {

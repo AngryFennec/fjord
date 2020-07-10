@@ -1144,6 +1144,7 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 138%;
+  cursor: none;
   color: #E9E9E9; }
 
 a {
@@ -1165,6 +1166,28 @@ a {
 
 .rub {
   font-family: 'ASLRubl'; }
+
+.app--main {
+  background: #141414; }
+
+.main__cursor {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border-radius: 50%;
+  background: transparent;
+  pointer-events: none;
+  z-index: 111;
+  border: 2px solid #FFFFFF;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-animation: moveCursor1 .2s infinite alternate;
+          animation: moveCursor1 .2s infinite alternate; }
 
 @media (max-width: 767px) {
   body {
@@ -1216,7 +1239,7 @@ a {
           flex-direction: column;
   width: 100%; }
   .portfolio__item:first-child {
-    margin-top: 0; }
+    margin-top: 20vh; }
   .portfolio__item:nth-child(2) {
     margin-top: -50px; }
   .portfolio__item:nth-child(3) {
@@ -1640,6 +1663,11 @@ a {
 .main-header--jstick {
   background: #017BFF;
   color: #141414; }
+  .main-header--jstick .main-header__para {
+    background: url("../img/jstick-header.png") no-repeat; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .main-header--jstick .main-header__para {
+        background: url("../img/jstick-header-2x.png") no-repeat; } }
   .main-header--jstick .main-header__wrapper {
     background: url("../img/header-title-jstick.svg") no-repeat 15% 50%; }
   .main-header--jstick .main-header__btn-open:after {
@@ -1654,6 +1682,11 @@ a {
 .main-header--ucandles {
   background: #FAFAFA;
   color: #141414; }
+  .main-header--ucandles .main-header__para {
+    background: url("../img/ucandles-header.png") no-repeat; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .main-header--ucandles .main-header__para {
+        background: url("../img/ucandles-header-2x.png") no-repeat; } }
   .main-header--ucandles .main-header__wrapper {
     background: url("../img/header-title-ucandles.svg") no-repeat 15% 50%; }
   .main-header--ucandles .main-header__btn-open:after {
@@ -1665,12 +1698,23 @@ a {
   .main-header--ucandles .main-header__overlay .main-header__sing {
     color: #E9E9E9; }
 
+.main-header--lis .main-header__para {
+  background: url("../img/lis-header.png") no-repeat; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .main-header--lis .main-header__para {
+      background: url("../img/lis-header-2x.png") no-repeat; } }
+
 .main-header--lis .main-header__wrapper {
   background: url("../img/header-title-lis.svg") no-repeat 15% 50%; }
 
 .main-header--app {
   background: #222431;
   color: #E9E9E9; }
+  .main-header--app .main-header__para {
+    background: url("../img/app-header.png") no-repeat; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .main-header--app .main-header__para {
+        background: url("../img/app-header-2x.png") no-repeat; } }
   .main-header--app .main-header__wrapper {
     background: url("../img/header-title-app.svg") no-repeat 15% 50%; }
   .main-header--app .main-header__overlay .main-header__sing {
