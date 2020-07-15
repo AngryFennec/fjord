@@ -1,4 +1,4 @@
-var rellax = new Rellax('.rellax');
+// var rellax = new Rellax('.rellax');
 /*
 (function() {
     document.addEventListener("mousemove", parallax);
@@ -125,18 +125,15 @@ document.addEventListener("mousemove", parallax);
   }
 */
 
-(function() {
 
-  const mainCursor = document.querySelector('.main__cursor');
+//   const mainCursor = document.querySelector('.main__cursor');
+//
+// document.addEventListener('mousemove', e => {
+//     mainCursor.setAttribute("style", "top: " + (e.pageY) + "px; left: " + (e.pageX) + "px;")
+// });
 
-document.addEventListener('mousemove', e => {
-    mainCursor.setAttribute("style", "top: " + (e.pageY) + "px; left: " + (e.pageX) + "px;")
-});
-
-document.addEventListener('click', e => {
-    mainCursor.classList.add("expand");
-    setTimeout(() => {
-        mainCursor.classList.remove("expand");
-    }, 500);
-});
-})()
+// document.addEventListener('click', e => {
+//     mainCursor.classList.add("expand");
+//     setTimeout(() => {
+//         mainCursor.classList.remove("expand");
+//     }, 200);

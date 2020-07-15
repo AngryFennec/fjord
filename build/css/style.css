@@ -1144,7 +1144,7 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 138%;
-  cursor: none;
+  cursor: url("../img/cursor.svg"), auto;
   color: #E9E9E9; }
 
 a {
@@ -1186,8 +1186,24 @@ a {
   border: 2px solid #FFFFFF;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  -webkit-animation: moveCursor1 .2s infinite alternate;
-          animation: moveCursor1 .2s infinite alternate; }
+  -webkit-animation: moveCursor1 .5s infinite alternate;
+          animation: moveCursor1 .5s infinite alternate; }
+
+@-webkit-keyframes moveCursor1 {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); } }
+
+@keyframes moveCursor1 {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); } }
 
 @media (max-width: 767px) {
   body {
@@ -1239,7 +1255,7 @@ a {
           flex-direction: column;
   width: 100%; }
   .portfolio__item:first-child {
-    margin-top: 20vh; }
+    margin-top: 30vh; }
   .portfolio__item:nth-child(2) {
     margin-top: -50px; }
   .portfolio__item:nth-child(3) {
