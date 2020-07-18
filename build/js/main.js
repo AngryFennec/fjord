@@ -137,3 +137,16 @@ document.addEventListener("mousemove", parallax);
 //     setTimeout(() => {
 //         mainCursor.classList.remove("expand");
 //     }, 200);
+
+
+var animation = bodymovin.loadAnimation({
+  container: document.getElementById('lottie'), // Required
+  path: 'json/data.json', // Required
+  renderer: 'html', // Required
+  loop: true, // Optional
+  autoplay: true, // Optional
+  name: "Hello World", // Name for future reference. Optional.
+  rendererSettings: {
+  preserveAspectRatio:'none'
+}
+})
