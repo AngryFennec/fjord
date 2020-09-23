@@ -1,0 +1,39 @@
+.main-stages {
+  padding-bottom: 320px;
+}
+
+.main-stages__title {
+  margin-bottom: 135px;
+}
+
+.main-stages__list {
+  @include list-reset;
+}
+
+.main-stages__item {
+  display: flex;
+  padding: 22px 0;
+  border-top: 1.33333px solid #414147;
+}
+
+.main-stages__item-title {
+  width: 35%;
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $text;
+}
+
+.main-stages__description {
+  width: 65%;
+  margin: 0;
+  padding: 10px 0 23px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $grey;
+}

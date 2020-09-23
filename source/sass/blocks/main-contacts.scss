@@ -1,0 +1,28 @@
+.main-contacts {
+  padding-bottom: 260px;
+}
+
+.main-contacts__title {
+  margin-bottom: 22px;
+}
+
+.main-contacts__item {
+  margin: 0;
+  margin-bottom: 21px;
+  font-weight: 300;
+  font-size: 21.3333px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  color: $grey;
+}
+
+.main-contacts__link {
+  margin-left: 32px;
+  text-decoration: none;
+  color: $white;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $grey;
+  }
+}
