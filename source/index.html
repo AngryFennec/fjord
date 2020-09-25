@@ -3,28 +3,44 @@
 <include src="source/components/head.html"></include>
 
 <body class="app app--main">
-  <header class="main-header" data-scene >
-    <div class="main-header__wrapper" >
+  <header class="main-header" >
+    <div class="main-header__fixed">
+      <p class="main-header__sing">SING</p>
+      <p class="main-header__date">2020</p>
+      <div class="main-header__btns-wrap">
+        <a class="main-header__message" href="#" aria-label="Напишите нам">
+          <svg width="28" height="27" viewBox="0 0 28 27">
+            <use xlink:href="img/sprite.svg#message"/>
+          </svg>
+        </a>
+        <div class="main-header__button button">
+          <a class="main-header__btn-open btn-open" href="#">
+            <!-- <svg class="main-header__svg-open" width="18" height="29" viewBox="0 0 18 29">
+              <use xlink:href="img/sprite.svg#menu-open"/>
+            </svg> -->
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main-header__overlay overlay">
+      <div class="main-header__wrap wrap">
+        <ul class="main-header__wrap-nav wrap-nav">
+          <li><a class="main-header__menu-link" href="#portfolio">Работы</a></li>
+          <li><a class="main-header__menu-link" href="contacts.html">Контакты</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="main-header__wrapper" data-scene >
       <div class="main__back" id="lottie"></div>
 
       <div class="main-header__top">
-      <p class="main-header__sing">SING</p>
             <a class="main-header__play-again"></a>
     </div>
-      <div class="main-header__button button">
-        <a class="main-header__btn-open btn-open" href="#"></a>
+      <div class="main-header__title-wrapper">
+        <h1 class="main-header__title page-title">Snow Fjord</h1>
+        <a class="main-header__portfolio js-scroll-trigger" data-scroll="#portfolio">студия разработки it продуктов</a>
       </div>
-      <div class="main-header__overlay overlay">
-        <div class="main-header__wrap wrap">
-          <p class="main-header__sing">SING</p>
-          <ul class="main-header__wrap-nav wrap-nav">
-            <li><a class="main-header__menu-link" href="#portfolio">Работы</a></li>
-            <li><a class="main-header__menu-link" href="contacts.html">Контакты</a></li>
-          </ul>
-
-        </div>
-      </div>
-      <a class="main-header__portfolio js-scroll-trigger" data-scroll="#portfolio">наши работы</a>
     </div>
   </header>
   <main class="container">

@@ -1,0 +1,29 @@
+.page-title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 282.128px;
+  line-height: 300px;
+  color: #0F0F0F;
+
+  @media (max-width: 1440px) {
+    font-size: 202px;
+    line-height: 250px;
+  }
+
+  @media (max-width: 1279px) {
+    font-size: 188px;
+    line-height: 1.2;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 134px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 62px;
+  }
+
+  @media (max-width: 374px) {
+    font-size: 52px;
+  }
+}

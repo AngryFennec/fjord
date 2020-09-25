@@ -8,6 +8,7 @@
 
 .main-stages__list {
   @include list-reset;
+  margin-left: 30%;
 }
 
 .main-stages__item {
