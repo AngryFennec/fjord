@@ -1851,18 +1851,39 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.project-footer {
+  padding: 0 100px; }
+  @media (max-width: 1024px) {
+    .project-footer {
+      padding: 0 70px; } }
+  @media (max-width: 768px) {
+    .project-footer {
+      padding: 0 53px; } }
+  @media (max-width: 767px) {
+    .project-footer {
+      padding: 0 16px; } }
+
 .project-footer__wrapper {
-  padding-top: 65px;
-  padding-bottom: 66px;
-  max-width: 1650px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  max-width: 1654px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  outline: 1px solid red; }
+          justify-content: space-between; }
+  @media (max-width: 1440px) {
+    .project-footer__wrapper {
+      padding-bottom: 36px; } }
+  @media (max-width: 1024px) {
+    .project-footer__wrapper {
+      padding-top: 12px;
+      padding-bottom: 30px; } }
   .project-footer__wrapper p {
     margin: 0;
     font-weight: 300;
@@ -1870,6 +1891,14 @@ a {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #E9E9E9; }
+    @media (max-width: 1024px) {
+      .project-footer__wrapper p {
+        font-size: 11.3778px;
+        line-height: 17px; } }
+    @media (max-width: 768px) {
+      .project-footer__wrapper p {
+        font-size: 8.53333px;
+        line-height: 13px; } }
   .project-footer__wrapper a {
     text-decoration: none;
     -webkit-transition: 0.2s;
@@ -1879,6 +1908,14 @@ a {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #FFFFFF; }
+    @media (max-width: 1024px) {
+      .project-footer__wrapper a {
+        font-size: 11.3778px;
+        line-height: 17px; } }
+    @media (max-width: 768px) {
+      .project-footer__wrapper a {
+        font-size: 8.53333px;
+        line-height: 13px; } }
     .project-footer__wrapper a:hover {
       -webkit-transition: 0.2s;
       transition: 0.2s;
