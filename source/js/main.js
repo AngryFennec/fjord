@@ -97,19 +97,19 @@ $('.js-scroll-trigger').click(function() {
 //
 // }
 
-const config = {
-  view: document.querySelector('.app'),
-  preload: true,
-  native: false,
-  change(state) {
-    document.documentElement.style.backgroundColor = `hsl(${(state.current / state.bounding) * 360}, 100%, 95%)`;
-  },
+// const config = {
+//   view: document.querySelector('.app'),
+//   preload: true,
+//   native: false,
+//   change(state) {
+//     document.documentElement.style.backgroundColor = `hsl(${(state.current / state.bounding) * 360}, 100%, 95%)`;
+//   },
 
-};
-if (document.querySelector('.app')) {
-const r = window.rolly(config);
-r.init();
-}
+// };
+// if (document.querySelector('.app')) {
+// const r = window.rolly(config);
+// r.init();
+// }
 
 /*
 document.addEventListener("mousemove", parallax);
