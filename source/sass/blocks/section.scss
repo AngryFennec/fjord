@@ -12,16 +12,12 @@
     padding: 0 120px;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     padding: 0 72px;
   }
 
   @media (max-width: 767px) {
-    padding: 0 72px;
-  }
-
-  @media (max-width: 374px) {
-    padding: 0 72px;
+    padding: 0 16px;
   }
 }
 

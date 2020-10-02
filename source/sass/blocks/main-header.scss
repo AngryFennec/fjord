@@ -53,6 +53,10 @@
   // padding-left: 33px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 767px) {
+    height: 310px;
+  }
 }
 
 .main-header__play-again {
@@ -85,16 +89,16 @@
 
 .main-header__portfolio {
   display: block;
-  margin-top: 25px;
+  // margin-top: 25px;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 24px;
+  line-height: 35px;
   // font-size: 14px;
   // line-height: 17px;
   letter-spacing: 0.06em;
   text-decoration: none;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-variant: small-caps;
   color: #E9E9E9;
   // padding-left: 185px;
@@ -102,23 +106,23 @@
 
   @media (max-width: 1440px) {
     font-size: 18px;
+    line-height: 26px;
   }
 
   @media (max-width: 1279px) {
     font-size: 10px;
-    line-height: 12px;
+    line-height: 16px;
     letter-spacing: 0.1em;
+    text-transform: uppercase;
   }
 
-  @media (max-width: 1024px) {
-    max-width: 130px;
-    font-size: 12px;
-    line-height: 17px;
-    letter-spacing: 0.03em;
+  @media (max-width: 1023px) {
+    max-width: 124px;
   }
 
   @media (max-width: 767px) {
     max-width: 100%;
+    margin-top: 43px;
     text-align: center;
   }
 }
@@ -227,23 +231,34 @@
   // color: #34B484;
 }
 
-.main-header__btn-close:after {
+.main-header--open .main-header__btn-open:after {
   position: absolute;
   content: "";
   width: 18px;
   height: 17px;
   background: url("../img/menu-close.svg") no-repeat;
+  background-size: contain;
   // left: -7px;
-}
 
-.main-header__btn-close {
+  @media (max-width: 1279px) {
+    width: 13px;
+    height: 13px;
+  }
 
-  transition: 0.2s;
-  &:hover {
-    transition: 0.2s;
-    opacity: 0.7;
+  @media (max-width: 1024px) {
+    width: 9px;
+    height: 9px;
   }
 }
+
+// .main-header__btn-close {
+
+//   transition: 0.2s;
+//   &:hover {
+//     transition: 0.2s;
+//     opacity: 0.7;
+//   }
+// }
 /*overlay*/
 .main-header__overlay {
   display: none;
@@ -262,8 +277,8 @@
   width: 100%;
   margin: 0 auto;
   max-width: 1920px;
-  padding-top: 32px;
-  padding-left: 33px;
+  // padding-top: 32px;
+  // padding-left: 33px;
 }
 
 .main-header__wrap-nav {
@@ -286,8 +301,8 @@
 .main-header__menu-link {
   font-style: normal;
   font-weight: bold;
-  font-size: 202.128px;
-  line-height: 250px; /* identical to box height */
+  // font-size: 202.128px;
+  // line-height: 250px; /* identical to box height */
   text-decoration: none;
   text-align: center;
   animation: pulse 1s;
@@ -429,42 +444,55 @@
 }
 
 .main-header__message {
+  display: flex;
+  width: 27px;
+  height: 28px;
   margin-top: 3px;
   margin-right: 50px;
   color: $white;
 
   @media (max-width: 1440px) {
+    width: 18px;
+    height: 18px;
     margin-right: 35px;
   }
 
   @media (max-width: 1279px) {
+    width: 13.5px;
+    height: 13.5px;
     margin-right: 26px;
   }
 
   @media (max-width: 1024px) {
+    width: 9px;
+    height: 9px;
     margin-right: 23px;
+    // margin-top: 0;
+  }
+
+  @media (max-width: 767px) {
     margin-top: 0;
   }
 
   & svg {
-    width: 27px;
-    height: 28px;
+    width: 100%;
+    height: 100%;
     transition: 0.3s;
 
-    @media (max-width: 1440px) {
-      width: 18px;
-      height: 18px;
-    }
+    // @media (max-width: 1440px) {
+    //   width: 18px;
+    //   height: 18px;
+    // }
 
-    @media (max-width: 1279px) {
-      width: 13.5px;
-      height: 13.5px;
-    }
+    // @media (max-width: 1279px) {
+    //   width: 13.5px;
+    //   height: 13.5px;
+    // }
 
-    @media (max-width: 1024px) {
-      width: 9px;
-      height: 9px;
-    }
+    // @media (max-width: 1024px) {
+    //   width: 9px;
+    //   height: 9px;
+    // }
   }
 
   &:hover {
@@ -488,10 +516,11 @@
   margin: 0;
   transform: rotate(-90deg) translate(50%);
   font-weight: 300;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 24px;
+  line-height: 35px;
   letter-spacing: 0.06em;
   color: #E9E9E9;
+  font-variant: small-caps;
 
   @media (max-width: 1440px) {
     font-size: 18px;
@@ -509,9 +538,7 @@
   }
 
   @media (max-width: 767px) {
-    font-size: 12px;
-    line-height: 17px;
-    letter-spacing: 0.03em;
+    top: 210px;
   }
 }
 
@@ -527,6 +554,19 @@
 .main-header__title-wrapper {
   align-self: center;
   margin: auto;
+
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    padding: 0 150px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding: 0 112px;
+  }
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .main-header__btns-wrap {

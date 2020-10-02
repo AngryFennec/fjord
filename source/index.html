@@ -4,42 +4,15 @@
 
 <body class="app app--main">
   <header class="main-header" >
-    <div class="main-header__fixed">
-      <p class="main-header__sing">SING</p>
-      <p class="main-header__date">2020</p>
-      <div class="main-header__btns-wrap">
-        <a class="main-header__message" href="#" aria-label="Напишите нам">
-          <svg width="28" height="27" viewBox="0 0 28 27">
-            <use xlink:href="img/sprite.svg#message"/>
-          </svg>
-        </a>
-        <div class="main-header__button button">
-          <a class="main-header__btn-open btn-open" href="#">
-            <!-- <svg class="main-header__svg-open" width="18" height="29" viewBox="0 0 18 29">
-              <use xlink:href="img/sprite.svg#menu-open"/>
-            </svg> -->
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="main-header__overlay overlay">
-      <div class="main-header__wrap wrap">
-        <ul class="main-header__wrap-nav wrap-nav">
-          <li><a class="main-header__menu-link" href="#portfolio">Работы</a></li>
-          <li><a class="main-header__menu-link" href="contacts.html">Контакты</a></li>
-        </ul>
-
-      </div>
-    </div>
-    <div class="main-header__wrapper" data-scene >
-      <div class="main__back" id="lottie"></div>
-
+    <include src="source/components/header-top.html"></include>
+    <div class="main-header__wrapper">
       <div class="main-header__top">
-            <a class="main-header__play-again"></a>
-    </div>
-      <div class="main-header__title-wrapper">
-        <h1 class="main-header__title page-title">Snow Fjord</h1>
-        <a class="main-header__portfolio js-scroll-trigger" data-scroll="#portfolio">студия разработки it продуктов</a>
+          <!-- <a class="main-header__play-again"></a> -->
+      </div>
+      <div class="main-header__title-wrapper section">
+        <!-- <h1 class="main-header__title page-title">Snow Fjord</h1> -->
+        <img src="img/snow-fjord.svg" alt="Snow Fjord" role="title">
+        <a class="main-header__portfolio js-scroll-trigger" data-scroll="#portfolio">студия разработки it&nbsp;продуктов</a>
       </div>
     </div>
   </header>
@@ -47,7 +20,7 @@
     <section class="portfolio" id="portfolio">
       <div class="portfolio__wrapper wrapper">
         <ul class="portfolio__list">
-          <li class="portfolio__item" data-scene data-speed="0.8">
+          <li class="portfolio__item">
             <a href="#">
               <div class="portfolio__content">
                 <img class="portfolio__img" src="img/jstick-small.png" width=400 height=505>
@@ -55,7 +28,7 @@
               </div>
             </a>
           </li>
-          <li class="portfolio__item rellax" data-scene data-speed="1.5">
+          <li class="portfolio__item">
             <a href="#">
               <div class="portfolio__content">
                 <img class="portfolio__img" src="img/ucandles-small.png" width=398 height=505>
@@ -63,7 +36,7 @@
               </div>
             </a>
           </li>
-          <li class="portfolio__item rellax" data-scene data-speed="0.8">
+          <li class="portfolio__item">
             <a href="#">
               <div class="portfolio__content">
                 <img class="portfolio__img" src="img/lis-small.png" width=500 height=585>
@@ -71,7 +44,7 @@
               </div>
             </a>
           </li>
-          <li class="portfolio__item rellax" data-scene data-speed="1.3">
+          <li class="portfolio__item">
             <a href="#">
               <div class="portfolio__content">
                 <img class="portfolio__img" src="img/app-small.png" width=500 height=585>
@@ -84,7 +57,7 @@
     </section>
     <include src="source/components/main-stages.html"></include>
     <include src="source/components/main-contacts.html"></include>
-        <include src="source/components/project-footer.html"></include>
+    <include src="source/components/project-footer.html"></include>
   </main>
   <include src="source/components/scripts.html"></include>
 </body>
