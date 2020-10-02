@@ -1,0 +1,21 @@
+.section-subtitle {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.06em;
+  font-variant: small-caps;
+  color: #E9E9E9;
+
+  @media (max-width: 1440px) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  @media (max-width: 1440px) {
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+}

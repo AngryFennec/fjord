@@ -62,18 +62,6 @@ $(document).ready(function(){
     });
 });
 
-// if ($('.main-header').hasClass('main-header--open')) {
-//   window.bodyScrollLock.disableBodyScroll($(".main-header__overlay"));
-// } else {
-//   window.bodyScrollLock.enableBodyScroll($(".main-header__overlay"));
-// }
-
-// $('.main-header__overlay').on('click', function(){
-//     $(".main-header__overlay").fadeToggle(200);
-//     $(".main-header__button a").toggleClass('main-header__btn-open').toggleClass('main-header__btn-close');
-//     window.bodyScrollLock.enableBodyScroll($(".main-header__overlay"));
-//     open = false;
-// });
 
 /*
 $(".main-header__menu-link").hover(function(){

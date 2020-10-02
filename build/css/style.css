@@ -1227,6 +1227,22 @@ a {
     font-size: 14px; } }
 
 /* Блоки */
+.logo img {
+  width: 48px;
+  height: 48px; }
+  @media (max-width: 1440px) {
+    .logo img {
+      width: 32px;
+      height: 32px; } }
+  @media (max-width: 1279px) {
+    .logo img {
+      width: 24px;
+      height: 24px; } }
+  @media (max-width: 767px) {
+    .logo img {
+      width: 16px;
+      height: 16px; } }
+
 .section {
   width: 100%;
   max-width: 1920px;
@@ -1260,6 +1276,25 @@ a {
       font-size: 72px;
       line-height: 86px; } }
 
+.section-subtitle {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.06em;
+  font-variant: small-caps;
+  color: #E9E9E9; }
+  @media (max-width: 1440px) {
+    .section-subtitle {
+      font-size: 18px;
+      line-height: 26px; } }
+  @media (max-width: 1440px) {
+    .section-subtitle {
+      font-size: 10px;
+      line-height: 16px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase; } }
+
 .page-title {
   margin: 0;
   font-weight: bold;
@@ -1286,16 +1321,23 @@ a {
 
 .portfolio {
   background: #141414;
-  padding: 0 100px; }
+  padding: 0 100px;
+  padding-bottom: 290px; }
   @media (max-width: 1440px) {
     .portfolio {
-      padding: 0 80px; } }
+      padding: 0 80px;
+      padding-bottom: 216px; } }
+  @media (max-width: 1279px) {
+    .portfolio {
+      padding-bottom: 148px; } }
   @media (max-width: 1024px) {
     .portfolio {
-      padding: 0 72px; } }
+      padding: 0 72px;
+      padding-bottom: 128px; } }
   @media (max-width: 767px) {
     .portfolio {
-      padding: 0 44px; } }
+      padding: 0 44px;
+      padding-bottom: 80px; } }
 
 .portfolio__wrapper {
   max-width: 1424px;
@@ -1325,7 +1367,7 @@ a {
 
 .portfolio__title {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 18px;
   line-height: 154.5%;
   max-width: 592px;
@@ -1358,6 +1400,9 @@ a {
   width: 100%; }
   .portfolio__item:first-child {
     margin-top: 30vh; }
+    @media (max-width: 767px) {
+      .portfolio__item:first-child {
+        margin-top: 10px; } }
   .portfolio__item:nth-child(2) {
     margin-top: -79px; }
     @media (max-width: 1440px) {
@@ -1777,8 +1822,6 @@ a {
 
 .main-header__button {
   display: inline;
-  right: 55px;
-  top: 47px;
   z-index: 999; }
 
 .main-header__button a {
@@ -1874,7 +1917,6 @@ a {
   text-align: center;
   -webkit-animation: pulse 1s;
           animation: pulse 1s;
-  color: #0D0D0D;
   -webkit-transition: 0.5s;
   transition: 0.5s; }
   .main-header__menu-link:hover {

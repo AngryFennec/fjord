@@ -6,15 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-  <link href="https://unpkg.com/rolly.js@0.2.0/css/style.css" rel="stylesheet">
 </head>
 
 
 <body class="app app--main">
   <header class="main-header">
     <div class="main-header__fixed">
-  <p class="main-header__sing">SING</p>
+  <a href="/" class="logo">
+    <img src="img/logo.png" alt="Snow Fjord">
+  </a>
   <p class="main-header__date">2020</p>
   <div class="main-header__btns-wrap">
     <a class="main-header__message" href="#" aria-label="Напишите нам">
@@ -44,15 +44,15 @@
       <div class="main-header__title-wrapper section">
         <!-- <h1 class="main-header__title page-title">Snow Fjord</h1> -->
         <img src="img/snow-fjord.svg" alt="Snow Fjord" role="title">
-        <a class="main-header__portfolio js-scroll-trigger" data-scroll="#portfolio">студия разработки it&nbsp;продуктов</a>
+        <a class="main-header__portfolio">студия разработки it&nbsp;продуктов</a>
       </div>
     </div>
   </header>
   <main class="container">
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio">
       <div class="portfolio__wrapper wrapper">
         <ul class="portfolio__list">
-          <li class="portfolio__item">
+          <li class="portfolio__item js-parallax-item">
             <a href="#">
               <div class="portfolio__content">
                 <img class="portfolio__img" src="img/moneyfirst.jpg" width="592" height="865">
@@ -60,7 +60,7 @@
               </div>
             </a>
           </li>
-          <li class="portfolio__item">
+          <li class="portfolio__item js-parallax-item-right">
             <a href="#">
               <div class="portfolio__content">
                 <img class="portfolio__img" src="img/ucandles.jpg" width="592" height="867">
@@ -68,7 +68,7 @@
               </div>
             </a>
           </li>
-          <li class="portfolio__item">
+          <li class="portfolio__item js-parallax-item">
             <a href="#">
               <div class="portfolio__content">
                 <img class="portfolio__img" src="img/lis.jpg" width="592" height="1060">
@@ -76,7 +76,7 @@
               </div>
             </a>
           </li>
-          <li class="portfolio__item">
+          <li class="portfolio__item js-parallax-item-right">
             <a href="#">
               <div class="portfolio__content">
                 <img class="portfolio__img" src="img/stick.jpg" width="592" height="810">
@@ -89,6 +89,7 @@
     </section>
     <section class="main-stages">
   <div class="main-stages__section section">
+    <p class="section-subtitle">этапы разработки</p>
     <h2 class="main-stages__title section-title">Этапы работы</h2>
     <ul class="main-stages__list">
       <li class="main-stages__item">
@@ -125,6 +126,7 @@
 
     <section class="main-contacts">
   <div class="section">
+    <p class="section-subtitle">Контакты</p>
     <h2 class="main-contacts__title section-title">Контакты</h2>
     <p class="main-contacts__item">Напишите нам письмо на почту <a href="mailto:snowfjord@yandex.ru" class="main-contacts__link">snowfjord@yandex.ru</a></p>
     <p class="main-contacts__item">или в WhatsApp на номер  <a href="tel:+79166910468" class="main-contacts__link">+7 916 691 04 68</a></p>
@@ -137,18 +139,14 @@
     <!-- //надо скриптом выводить год -->
     <p>@2020</p>
     <a class="project-footer__link" href="mailto:contact@snow-fjord.com">contact@snow-fjord.com</a>
-    <a href="index.html" class="main-header__sing">SIGN</a>
+    <a href="/" class="logo">
+      <img src="img/logo.png" alt="Snow Fjord">
+    </a>
   </div>
 </section>
 
   </main>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
-<!-- <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.0.0/rellax.min.js"></script> -->
-<!-- <script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script> -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.0/lottie.js"></script> -->
-<script src="js/vendor.js"></script>
+  <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
 
 </body>
