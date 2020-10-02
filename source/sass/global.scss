@@ -24,6 +24,21 @@ body {
   line-height: 138%;
 cursor:url("../img/cursor.svg"), auto;
   color: $text;
+
+  &.no-scroll {
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+
+  &.no-scroll-ios {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 a {

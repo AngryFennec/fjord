@@ -12,28 +12,37 @@
 
 
 <body class="app">
-  <header class="main-header main-header--contacts" data-scene="">
+  <header class="main-header main-header--contacts">
+    <div class="main-header__fixed">
+  <p class="main-header__sing">SING</p>
+  <p class="main-header__date">2020</p>
+  <div class="main-header__btns-wrap">
+    <a class="main-header__message" href="#" aria-label="Напишите нам">
+      <svg width="28" height="27" viewBox="0 0 28 27">
+        <use xlink:href="img/sprite.svg#message"></use>
+      </svg>
+    </a>
+    <div class="main-header__button button">
+      <a class="main-header__btn-open btn-open" href="#"></a>
+    </div>
+  </div>
+</div>
+<div class="main-header__overlay overlay">
+  <div class="main-header__wrap wrap">
+    <ul class="main-header__wrap-nav wrap-nav">
+      <li><a class="main-header__menu-link page-title" href="#portfolio">Работы</a></li>
+      <li><a class="main-header__menu-link page-title" href="contacts.html">Контакты</a></li>
+    </ul>
+
+  </div>
+</div>
+
     <div class="main-header__wrapper">
       <div class="main-header__top">
-        <a href="index.html" class="main-header__sing">SING</a>
-
-      </div>
-      <div class="main-header__button button">
-        <a class="main-header__btn-open btn-open" href="#"></a>
-      </div>
-      <div class="main-header__overlay overlay">
-        <div class="main-header__wrap wrap">
-          <a href="index.html" class="main-header__sing">SING</a>
-          <ul class="main-header__wrap-nav wrap-nav">
-            <li><a class="main-header__menu-link" href="index.html#portfolio">Работы</a></li>
-            <li><a class="main-header__menu-link" href="contacts.html">Контакты</a></li>
-          </ul>
-
-        </div>
       </div>
     </div>
   </header>
-  <main class="container container--contacts" data-scene="">
+  <main class="container container--contacts">
     <section class="contacts">
       <div class="contacts__wrapper">
         <div class="contacts__top">
@@ -56,7 +65,7 @@
     </section>
 
     
-<section class="project-footer" data-scene="">
+<section class="project-footer">
   <div class="project-footer__wrapper">
     <!-- //надо скриптом выводить год -->
     <p>@2020</p>
@@ -67,12 +76,11 @@
 
   </main>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.0.0/rellax.min.js"></script>
-<script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script> -->
-
-<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.0.0/rellax.min.js"></script> -->
+<!-- <script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.0/lottie.js"></script> -->
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
