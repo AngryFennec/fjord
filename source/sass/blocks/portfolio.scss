@@ -1,17 +1,25 @@
 .portfolio {
     background: $back;
     padding: 0 100px;
+    padding-bottom: 290px;
 
     @media(max-width: 1440px){
       padding: 0 80px;
+      padding-bottom: 216px;
+    }
+
+    @media(max-width: 1279px){
+      padding-bottom: 148px;
     }
 
     @media(max-width: 1024px){
       padding: 0 72px;
+      padding-bottom: 128px;
     }
 
     @media(max-width: 767px){
       padding: 0 44px;
+      padding-bottom: 80px;
     }
 }
 
@@ -43,7 +51,7 @@
 
 .portfolio__title {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 18px;
   line-height: 154.5%;
   max-width: 592px;
@@ -77,6 +85,10 @@
 
   &:first-child {
     margin-top: 30vh;
+
+    @media(max-width: 767px){
+      margin-top: 10px;
+    }
   }
 
   &:nth-child(2) {
