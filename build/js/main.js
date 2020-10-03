@@ -189,14 +189,14 @@ document.addEventListener("mousemove", parallax);
 (function () {
   var windowWidth = document.documentElement.clientWidth;
   var LAPTOP_WIDTH = 1024;
+  var controller = null;
   var containers = document.querySelectorAll('.js-parallax-item');
   var rightContainers = document.querySelectorAll('.js-parallax-item-right');
 
-  if (windowWidth >= LAPTOP_WIDTH) {
-    var controller = new ScrollMagic.Controller({
+  var scrollParallax = function () {
+    controller = new ScrollMagic.Controller({
       globalSceneOptions: {
         triggerHook: 'onEnter',
-        // duration: '400%'
       }
     });
 
@@ -216,13 +216,33 @@ document.addEventListener("mousemove", parallax);
       rightContainers.forEach(function (item) {
         new ScrollMagic.Scene({
           triggerElement: item,
-          duration: '300%'
+          duration: '200%'
         })
           .setTween(item, {y: '-40%', ease: 'linear'})
           // .addIndicators()
           .addTo(controller);
       });
     }
+
+  };
+
+  if (windowWidth >= LAPTOP_WIDTH) {
+    scrollParallax();
   }
+
+  window.addEventListener('resize', function () {
+    windowWidth = document.documentElement.clientWidth;
+
+    if (windowWidth >= LAPTOP_WIDTH) {
+      if (!controller) {
+        scrollParallax();
+      }
+    } else {
+      if (controller) {
+        controller = controller.destroy(true);
+      }
+
+    }
+  });
 
 })();
